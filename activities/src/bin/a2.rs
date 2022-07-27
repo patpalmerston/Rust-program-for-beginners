@@ -17,11 +17,11 @@ fn sum(a: i32, b: i32) -> i32 {
 }
 
 fn display(result: i32) {
-  println!("{:?}", result);
+  println!("{:?}", result)
 }
 
 
 fn main() {
   let result = sum(1, 2);
-  display(result);
+  display(result)
 }
