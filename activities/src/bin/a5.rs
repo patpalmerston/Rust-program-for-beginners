@@ -18,10 +18,11 @@ let mut i = 1;
   loop {
   // * Print the variable within the loop statement
     println!("{:?}", i);
-    i = i + 1;
-    if i == 5 {
+    // i = i + 1;
+    if i == 4 {
       // * Use break to exit the loop
       break;
     }
+    i = i + 1;
   }
 }
