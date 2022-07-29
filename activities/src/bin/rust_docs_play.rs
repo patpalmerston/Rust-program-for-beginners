@@ -45,3 +45,17 @@
 // } // Here, some_integer goes out of scope. Nothing special happens.
 
 // makes_copy(x); //out of scope and stalls whole terminal run
+
+fn main() {
+  let s1 = String::from("hello");
+  let (s2, len) = calculate_length(s1);
+
+  println!("The length of '{}' is {}.", s2, len);
+  // println!("{}", s1);
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+  let length = s.len(); // len() returns the length of a String
+
+  (s, length)
+}
